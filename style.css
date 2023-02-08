@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+background-color: aquamarine;
+height: 150vh;
+}
+div.relative {
+    background-color: green;
+    outline: 2px solid red;
+    position: relative;
+    left: 20px;
+    width: 500px;
+}
+div.fixed {
+background-color: black;
+color: beige;
+max-width: 200px;
+border-radius: 50px;
+padding: 10px;
+position: fixed;
+bottom: 15px;
+right: 10px;
+}
+div.absolute  {
+    position: relative;
+    color: black;
+    background-color: red;
+    height: 100px;
+    width: 300px;
+}
+div.absolute h3{
+margin: 10px;
+background-color: blue;
+position: absolute;
+left:30px;
+top:25px
+}
+div.sticky {
+    text-align: center;
+    background-color: tomato;
+    position: sticky;
+    top: 5px;
+    z-index: 100;
+}
+
+div.container {
+position: relative;
+}
+div.container img{
+    width: 100%;
+    height: auto;
+}
+div.container h1{
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); /* This is a shorthand of
+    translateX(-50%) and translateY(-50%) */
+
+}

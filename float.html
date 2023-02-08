@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        p {
+            outline: 2px solid red;
+        }
+
+        p::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        img {
+            float: right;
+        }
+
+        div {
+            float: left;
+            margin: 5px;
+            outline: 2px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <p><img src="https://www.w3schools.com/css/pineapple.jpg" alt="img">
+        Lorem ipsum dolor,
+        Consectetur, unde!
+    </p>
+    <div>DIV1</div>
+    <div>DIV2</div>
+    <div>DIV3</div>
+    <p style="clear:left">usman</p>
+</body>
+
+</html>
